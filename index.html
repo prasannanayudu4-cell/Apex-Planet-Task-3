@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>My Interactive Webpage</h1>
+
+<div class="container">
+
+  <!-- Quiz -->
+  <div>
+    <h2>Quiz</h2>
+    <div id="quiz">
+      <p>What does CSS stand for?</p>
+
+      <button onclick="checkAnswer('a')">A. Creative Style Sheets</button>
+      <button onclick="checkAnswer('b')">B. Cascading Style Sheets</button>
+      <button onclick="checkAnswer('c')">C. Computer Style Syntax</button>
+    </div>
+
+    <p id="result"></p>
+  </div>
+
+  <!-- Image Carousel -->
+  <div>
+    <h2>Image Carousel</h2>
+    <img id="carousel" src="img1.jpg" width="300">
+    <br><br>
+    <button onclick="nextImage()">Next</button>
+  </div>
+
+  <!-- API Demo -->
+  <div>
+    <h2>API Demo</h2>
+    <div id="joke"></div>
+    <br>
+    <button onclick="getJoke()">Get Joke</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
